@@ -1,0 +1,4 @@
+# C Post-Increment Operator Pitfall
+This repository demonstrates a subtle but common error related to the post-increment operator (`++`) in C.  The code produces an output that might be counter-intuitive for those unfamiliar with how post-incrementing works in expressions.
+The `bug.c` file contains the erroneous code. The solution file (`bugSolution.c`) explains the issue and provides the expected output and an alternative which may be easier to understand for beginners. 
+The problem lies in understanding the order of evaluation within the `printf` statement. Post-incrementing modifies the variable *after* its value has been used within the expression.
